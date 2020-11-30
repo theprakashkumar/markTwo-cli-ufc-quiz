@@ -7,4 +7,4 @@
  To see this app in action you the also visit to [repl.it](https://repl.it/@theprakashkumar/markTwo-cli-ufc-quiz?embed=1&output=1) and press the play icon which is at let lower bottom of the screen.
 
  ### Play
-For the first six question you just need to press the option key i.e. key 1 to 4 no other key is accepted and for last four question you have type the answer and press enter.
+For the first six question you just need to press the option key i.e. key 1 to 4 no other key is accepted and for last four question you have type the answer and then press enter.
