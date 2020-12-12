@@ -1,5 +1,5 @@
 # markOne-cli-simple-quiz
- This is a simple CLI quiz app which asks about UFC(Ultimate Fighting Championship). CLI stands for Command Line Applications, also referred to as Console Applications, are computer programs designed to be used from a text interface. 
+This is a simple CLI quiz app made with Node which asks about the UFC(Ultimate Fighting Championship). CLI stands for Command Line Applications, also referred to as Console Applications, are computer programs designed to be used from a text interface.
 
  ### Usage
  To use this app just clone the repo to your local machine extract the files(if required) the run `npm install` in terminal to download the require dependencies. Then we need to run the `index.js` file using the Node(which need to be installed), to run the `index.js` file we can use the following command:  
