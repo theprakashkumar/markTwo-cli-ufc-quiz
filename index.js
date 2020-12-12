@@ -156,5 +156,5 @@ console.log(chalk.blueBright(`Your Final Score is ${chalk.greenBright(score)} an
 
 // if score is equal to 9 or more
 if(score => 9){
-    console.log(chalk.yellow.bold("YAY!, YOU MADE INTO LEADER BOARD, PLEASE SEND THE SCREESHOT OF YOUR SCORE TO MARKTWO@GMAIL.COM TO ADD YOU TO OUR LEDER BOARD"));
+    console.log(chalk.yellow.bold("YAY!, YOU MADE INTO LEADER BOARD, PLEASE SEND THE SCREESHOT OF YOUR SCORE TO MARKTWO@GMAIL.COM TO ADD YOU TO OUR LEDER BOARD!"));
 }
