@@ -71,20 +71,19 @@ const qnaLevelThree=
         }
     ]
 
-// ask the user's name :) and greet them
+// ask the user's name and greet them
 let name=readlineSync.question(chalk.cyanBright("Your name? "));
 
 console.log(`${chalk.greenBright("Hi")} ${chalk.magentaBright(name)}! \n${chalk.greenBright("Welcome to UFC Quiz Game!")} \n`);
 
 // print random response to avoid repeated response
-const wrongAnswerFirstPart=
-[
+const wrongAnswerFirstPart=[
     "The correct answer is", 
     "No, the correct answer is",
     "Nope, the answer would be"
 ]
-const wrongAnswerlastPart=
-[
+
+const wrongAnswerlastPart=[
     ", but that was good risk taking on your part!", 
     ", but atleast you tried!", 
     ", but well tried!"
@@ -92,7 +91,7 @@ const wrongAnswerlastPart=
 
 const correctAnswer=["Correct 😊!", "Right 😊!", "Yes, that is just what I wanted 😊"]
 
-// function to ask the question :) and do things based on the response
+// function to ask the question and do things based on the response
 function playWithOption(q, option, a){
     // print the question
     console.log(chalk.cyanBright(q));
@@ -135,7 +134,7 @@ function playWithoutOption(q, a){
     }
 }
 
-// loop over the `qna` :) and run `play` for each of them
+// loop over the `qna` and run `play` for each of them
 console.log(chalk.black.bgYellowBright(`Question Level One \n`));
 for(item of qnaLevelOne){
     playWithOption(item.q, item.option, item.a);
@@ -154,7 +153,12 @@ for(item of qnaLevelThree){
 // pirnt the final score
 console.log(chalk.blueBright(`Your Final Score is ${chalk.greenBright(score)} and Number of Icorrect Response(s) is ${chalk.redBright(wrongAnswered)}. \n`));
 
-// if score is equal to 9 or more
-if(score => 9){
+//calculate minimum score in leader board
+let socreArray=[];
+topScorer.map(item => socreArray.push(item.score));
+let minScoreInLeaerBoard=Math.min(...socreArray);
+
+// if elegible for leader board
+if(score => minScoreInLeaerBoard){
     console.log(chalk.yellow.bold("YAY!, YOU MADE INTO LEADER BOARD, PLEASE SEND THE SCREESHOT OF YOUR SCORE TO MARKTWO@GMAIL.COM TO ADD YOU TO OUR LEDER BOARD!"));
 }
